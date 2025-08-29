@@ -10,13 +10,14 @@ Welcome to the Multi-Source AI Agent Challenge! In this project, you'll build an
 - Node.js
 - [LangChain](https://js.langchain.com/docs/) - For LLM integration and chains
 - [LangGraph](https://js.langchain.com/docs/langgraph/) - For agent workflow orchestration
+- OpenAI ou Google Gemini como provedor de LLM
 
 ### Core Features
 Your AI agent must be able to:
 
 1. **Answer questions using multiple data sources:**
    - **SQLite databases**: The agent should query `.db` files placed in the `data/sqlite` folder
-   - **Document context**: The agent should extract information from `.txt` files in the `data/documents` folder
+  - **Document context**: O agente deve extrair informação de arquivos `.txt` em `data/documents`, pesquisando automaticamente o conteúdo relevante. Caso haja uma resposta nos documentos, ela terá prioridade e será usada antes de recorrer ao conhecimento geral do modelo.
    - **External data**: The agent should be able to run bash commands (with user approval) to gather additional data (e.g., using `curl` to fetch web content)
 
 2. **Implement a conversational interface** - either in the browser or terminal
@@ -39,6 +40,23 @@ Your solution must demonstrate:
 4. Include detailed instructions on how to run and test your solution
 5. Your code must be 100% functional
 
+## Quick Start
+
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
+2. Copie `.env.example` para `.env` e defina `LLM_PROVIDER` (`openai` ou `gemini`) e a chave correspondente (`OPENAI_API_KEY` ou `GOOGLE_API_KEY`). Opcionalmente ajuste `GOOGLE_MODEL` e `GOOGLE_EMBED_MODEL` (padrões `gemini-1.5-flash` e `text-embedding-004`).
+3. Execute em modo desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+   Ou compile e execute:
+   ```bash
+   npm run build
+   npm start
+   ```
+
 ## Evaluation Criteria
 
 Your submission will be evaluated based on:
@@ -55,7 +73,7 @@ Include detailed instructions on how to set up and run your solution. For exampl
 
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Configure environment variables (copy `.env.example` to `.env` and fill in required values)
+3. Configure environment variables (copy `.env.example` to `.env`, escolha `LLM_PROVIDER` e forneça a chave apropriada)
 4. Add sample databases to the `sqlite` folder
 5. Add sample documents to the `documents` folder
 6. Start the agent: `npm start`
