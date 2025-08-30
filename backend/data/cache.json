@@ -1,0 +1,26 @@
+[
+  {
+    "question": "o que é big-o?",
+    "answer": "A notação Big O permite que você compare o número de operações e informa o quão rapidamente um algoritmo cresce."
+  },
+  {
+    "question": "o que é a notação big-o?",
+    "answer": "A notação Big O informa o quão rápido é um algoritmo."
+  },
+  {
+    "question": "Quais são os tempos na notação big-o?",
+    "answer": "O(log n)"
+  },
+  {
+    "question": "Me diga todos os tempos em notação big-o",
+    "answer": "A Busca na Web fornece a informação correta sobre a notação Big O. A Base de Dados Local trata de um tópico diferente (Bola de Ouro).\n\nAqui estão os tempos comuns em notação Big O, do menos complexo para o mais complexo:\n\n*   **O(1) - Constante:** O tempo de execução é independente do tamanho da entrada.\n*   **O(log n) - Logarítmica:** O tempo de execução cresce lentamente à medida que o tamanho da entrada aumenta.\n*   **O(n) - Linear:** O tempo de execução cresce proporcionalmente ao tamanho da entrada.\n*   **O(n log n) - Log-linear:** Uma combinação de crescimento linear e logarítmico.\n*   **O(n²) - Quadrática:** O tempo de execução cresce com o quadrado do tamanho da entrada.\n*   **O(2ⁿ) - Exponencial:** O tempo de execução dobra a cada elemento adicional na entrada.\n*   **O(n!) - Fatorial:** O tempo de execução cresce extremamente rápido com o tamanho da entrada."
+  },
+  {
+    "question": "quem é o presidente do Brasil?",
+    "answer": "Neymar"
+  },
+  {
+    "question": "oi",
+    "answer": "oi"
+  }
+]
